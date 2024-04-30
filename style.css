@@ -4,6 +4,8 @@ h1 {
 body {
 text-align: center;
 background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMyLpydfIthw8t7_aRm8-h-VHICnwJDiplyQ&s);
+background-size: contain;
+background-repeat: no-repeat;
 }
 form {
   padding: auto;
