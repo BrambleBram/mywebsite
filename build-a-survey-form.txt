@@ -1,0 +1,77 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1 id="title">Hello World</h1>
+    <p id="description">This is a form to fill out about the world you live in</p>
+    <form id="survey-form" style="form">
+      <p>
+      <label id="name-label">Name:</label>
+      <input id="name" required  placeholder="enter name"></input>
+      <p>
+      <label id="email-label">Email:</label>
+      <input id="email" type="email" required  placeholder="enter email"></input>
+      <p>
+        <label id="number-label">Number:</label>
+        <input id ="number" type="number" placeholder="enter number" min=18 max=100>
+      <p>
+        <label id="select-lable">Select:
+        <select name="dropdown" id="dropdown">
+          <option value="earth">Earth</option>
+          <option value="jupiterr">Jupiter</option> </select>
+      <p>
+        <div style="life-form-style">
+      <label for="life-form">What life form are you?</label><p>
+          <input type="radio" id="human" name="life-form" value="Human">
+         <label for="human">Human</label><br>
+        <input type="radio" id="martian" name="life-form" value="Martion">
+          <label for="css">Martion</label><br>
+          <input type="radio" id="germ" name="life-form" value="Germ">
+          <label for="germ">Germ</label>
+        </div>
+        <div>
+          <label for="breath">What do you breath?</label><p>
+          <input type="checkbox" id="air" name="breath" value="Air">
+          <label for="air">Air</label>
+          <input type="checkbox" id="fire" name="breath" value="Fire"><label for"fire">Fire</label>
+        </div>
+        <div>
+          <label for="describe">Describe yourself</label>
+<textarea id="describe" rows="4">
+</textarea>
+          <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+h1 {
+ color: blue; 
+}
+body {
+text-align: center;
+}
+form {
+  padding: auto;
+}
+form {
+display: inline-block;
+background-color: pink;
+}
+div {
+  border: solid;
+  border-color: white;
+}
+
+** end of undefined **
+
