@@ -1,16 +1,18 @@
 /* CSS styles */
 body {
   text-align: center;
-  background-color: #f1f1f1; /* Light gray background */
+  /* background-color: #08c8d971; /* Light gray background */
+  background: linear-gradient(to bottom, #eec5dd, #2e014a);
   padding: 20px;
 }
 
 h1 {
   color: blue;
+  font-family: 'Comic Sans MS';
 }
 
 #description {
-  color: green; /* Change text color to green */
+  color: white; /* Change text color to green */
 }
 
 form {
@@ -59,4 +61,9 @@ button:hover {
 
 button[type="submit"] {
   width: 100%;
+}
+
+fieldset {
+border-radius: 10px;
+border-color: #177cce3c;
 }
