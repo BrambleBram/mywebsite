@@ -9,44 +9,56 @@
 <body>
   <h1 id="title">Hello World</h1>
   <p id="description">This is a form to fill out about the world you live in</p>
-  <form id="survey-form" style="form">
- 
-    <label id="name-label">Name:</label>
-    <input id="name" required placeholder="enter name"></input>
-    <p></p>
-    <label id="email-label">Email:</label>
-    <input id="email" type="email" required placeholder="enter email"></input>
-   
-    <label id="number-label">Number:</label>
-    <input id ="number" type="number" placeholder="enter number" min="18" max="100">
- 
-    <label id="select-label">Select:</label>
-    <select name="dropdown" id="dropdown">
-      <option value="earth">Earth</option>
-      <option value="jupiter">Jupiter</option>
-      <option value="mars">Mars</option>
-    </select>
-  
-    <div class="life-form-style">
-      <label for="life-form">What life form are you?</label><p>
-      <input type="radio" id="human" name="life-form" value="Human">
-      <label for="human">Human</label><br>
-      <input type="radio" id="martian" name="life-form" value="Martian">
-      <label for="martian">Martian</label><br>
-      <input type="radio" id="germ" name="life-form" value="Germ">
-      <label for="germ">Germ</label>
-    </div>
-    <div>
-      <label for="breath">What do you breathe?</label><p>
-      <input type="checkbox" id="air" name="breath" value="Air">
-      <label for="air">Air</label>
-      <input type="checkbox" id="fire" name="breath" value="Fire">
-      <label for="fire">Fire</label>
-    </div>
-    <div>
-      <label for="describe">Describe yourself</label>
-      <textarea id="describe" rows="4"></textarea>
-    </div>
+  <form id="survey-form">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input id="name" name="name" required placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" required placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input id="age" type="number" name="age" min="18" max="100" placeholder="Enter your age">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Location Information</legend>
+      <div class="form-group">
+        <label for="location">Select:</label>
+        <select id="location" name="location">
+          <option value="earth">Earth</option>
+          <option value="jupiter">Jupiter</option>
+          <option value="mars">Mars</option>
+        </select>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Additional Information</legend>
+      <div class="form-group">
+        <p>What life form are you?</p>
+        <input type="radio" id="human" name="life-form" value="Human">
+        <label for="human">Human</label>
+        <input type="radio" id="martian" name="life-form" value="Martian">
+        <label for="martian">Martian</label>
+        <input type="radio" id="germ" name="life-form" value="Germ">
+        <label for="germ">Germ</label>
+      </div>
+      <div class="form-group">
+        <p>What do you breathe?</p>
+        <input type="checkbox" id="air" name="breath" value="Air">
+        <label for="air">Air</label>
+        <input type="checkbox" id="fire" name="breath" value="Fire">
+        <label for="fire">Fire</label>
+      </div>
+      <div class="form-group">
+        <label for="describe">Describe yourself:</label>
+        <textarea id="describe" name="description" rows="4"></textarea>
+      </div>
+    </fieldset>
     <button type="submit" id="submit">Submit</button>
   </form>
 </body>
